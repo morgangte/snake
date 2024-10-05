@@ -1,0 +1,231 @@
+/* ----------- GENERAL STYLE ------------------ */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button */
+
+button {
+    background-color: rgb(235, 235, 235);
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    border: solid 1px rgb(41, 41, 41);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    color: rgba(14, 14, 14, 0.836);
+    background-color: rgba(221, 221, 221, 0.842);
+}
+
+/* Select */
+
+select {
+    background-color: rgb(235, 235, 235);
+    color: black;
+    border-radius: 5px;
+    font-size: 13px;
+    border: solid 1px rgb(41, 41, 41);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+select:hover {
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+}
+
+/* Input */
+
+input {
+    background-color: rgb(235, 235, 235);
+    color: black;
+    border-radius: 5px;
+    font-size: 13px;
+    border: solid 1px rgb(41, 41, 41);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+/* --------------- body ----------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: rgb(32, 32, 32);
+    font-size: 16px;
+    color: white;
+
+    /* Make the footer stay at the bottom of the page */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------- header ------------------ */
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 10px 4px 16px rgb(24, 24, 24);
+}
+
+header>div>a {
+    text-decoration: none;
+}
+
+.left-menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 6%;
+}
+
+.left-menubar>img,
+.left-menubar>a>img {
+    height: 23px;
+    margin-left: 14px;
+}
+
+.left-menubar>img:hover {
+    cursor: pointer;
+}
+
+.right-menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 94%;
+}
+
+.menu-select {
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 30px;
+    transition: 0.1s;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.menu-select:hover {
+    background-color: rgb(66, 66, 66);
+    border-radius: 30px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+/* ------------------- main --------------------- */
+
+main {
+    margin: 20px;
+    min-height: 00px;
+}
+
+a {
+    color: white;
+}
+
+/* ------------- sections -------------------- */
+
+.sections-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 7px;
+    width: 500px;
+}
+
+section>article {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    gap: 5px;
+}
+
+section>article>h1 {
+    margin: 0px;
+    font-size: large;
+}
+
+section>article>p {
+    margin: 0px;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    height: 70%;
+}
+
+section>article>.date,
+section>article>.langages {
+    padding-top: 1px;
+    font-size: small;
+    color: rgb(189, 189, 189);
+    height: 8%;
+}
+
+section>img {
+    margin: 5px;
+    border-radius: 7px;
+    width: 330px;
+}
+
+/* Si la section comprend une image */
+.avec-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Si la section est cliquable */
+.lien-de-section {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.avec-lien {
+    transition: 0.1s;
+}
+
+.avec-lien:hover {
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* ------------------ footer --------------------- */
+
+footer {
+    padding: 20px;
+
+    /* Make the footer stay at the bottom of the page */
+    margin-top: auto;
+}
+
+#version-number {
+    color: rgb(189, 189, 189);
+    font-size: small;
+    text-align: right;
+}

@@ -1,0 +1,295 @@
+section.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+
+    width: auto;
+    height: auto;
+
+    background-color: rgb(32, 32, 32);
+}
+
+section.game>h1 {
+    margin: 0px;
+    padding: 5px;
+    padding-bottom: 7px;
+}
+
+/* ----------------- Game top ------------------- */
+
+article.game-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+
+    margin: 0px;
+    padding: 0px;
+
+    --zoom: 100vh;
+    width: min(var(--zoom), 80%);
+}
+
+article.game-top>p.left-text-info {
+    width: 50%;
+
+    text-align: start;
+    font-size: 15px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+article.game-top>p.right-text-info {
+    width: 50%;
+
+    text-align: end;
+    font-size: 15px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* ---------------- Game board ------------------ */
+
+section.game>article.game-board {
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    --zoom: 100vh;
+    width: min(var(--zoom), 80%);
+    height: min(var(--zoom), 100%);
+}
+
+section.game>article.game-board>#game-canvas {
+    margin: 0px;
+    padding: 0px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------- Game bottom ------------------- */
+
+article.game-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+
+    margin: 0px;
+    padding: 0px;
+
+    --zoom: 100vh;
+    width: min(var(--zoom), 80%);
+}
+
+article.game-bottom>p.left-text-info {
+    width: 50%;
+
+    text-align: start;
+    font-size: 15px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+article.game-bottom>p.right-text-info {
+    width: 50%;
+
+    text-align: end;
+    font-size: 15px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* ------------------ Game cmd ------------------- */
+
+section.game>article.game-cmd {
+    display: grid;
+
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    width: min(60vh, 80%);
+    height: auto;
+
+    border-radius: 5px;
+}
+
+section.game>article.game-cmd>button#brickb-restart-button,
+section.game>article.game-cmd>button#snake-restart-button,
+section.game>article.game-cmd>button#demineur-restart-button {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+section.game>article.game-cmd>button#default-settings,
+section.game>article.game-cmd>button#apply-changes {
+    grid-row: 2;
+}
+
+section.game>article.game-cmd>button#gol-start {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+section.game>article.game-cmd>button#gol-play-pause {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+section.game>article.game-cmd>button#gol-stop {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+section.game>article.game-cmd>button#gol-apply-changes {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+section.game>article.game-cmd>button#gol-clear {
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+
+
+/* ---------------- Game options ----------------- */
+
+section.game>article.game-options {
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: min(60vh, 80%);
+}
+
+section.game>article.game-options>h1 {
+    padding: 0px;
+    padding-left: 11px;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+section.game>article.game-options>div.game-option {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0px;
+    padding: 0px;
+    padding-left: 35px;
+}
+
+section.game>article.game-options>div.game-option>h2 {
+    font-size: 15px;
+    font-weight: 400;
+
+    margin: 0px;
+    padding: 0px;
+
+    width: 40%;
+}
+
+section.game>article.game-options>div.game-option>input.number-input {
+    width: 40px;
+    height: auto;
+    height: 15px;
+}
+
+section.game>article.game-options>div.game-option>span.spaced {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+article.game-options>div.game-option>div.zoom-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    width: 50%;
+
+    font-size: 15px;
+}
+
+article.game-options>div.game-option>div.zoom-control>button.zoom {
+    width: 47px;
+
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    border-radius: 25px;
+
+    font-weight: 900;
+}
+
+/* ------------------- Buttons ------------------- */
+
+button {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+
+    width: 100%;
+    height: auto;
+}
+
+/* ---------------- Infobulle ------------------ */
+
+
+img+span.infobulle {
+    position: absolute;
+    margin-top: -63px;
+    margin-left: 18px;
+    z-index: 10;
+
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    background: rgb(43, 43, 43);
+    padding: 10px;
+    border-radius: 5px;
+
+    transform: scale(0);
+    opacity: 0;
+}
+
+span.infobulle:hover,
+img:focus+span.infobulle,
+img:hover+span.infobulle {
+    transform: scale(1);
+    opacity: 1;
+}
